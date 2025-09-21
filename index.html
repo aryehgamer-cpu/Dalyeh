@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Time Since</title>
+  <title>Dalyeh ♥</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: column; /* stack elements vertically */
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       background: #fdfdfd;
-    }
-    #counter {
-      font-size: 2.2em;
-      font-weight: bold;
       color: #222;
-      text-align: center;
     }
     #title {
       font-size: 2.5em;
       font-weight: 600;
       margin-bottom: 20px;
       letter-spacing: 1px;
+    }
+    #counter {
+      font-size: 2.2em;
+      font-weight: bold;
+      text-align: center;
     }
   </style>
 </head>
@@ -32,7 +33,7 @@
   <div id="counter"></div>
 
   <script>
-    const startDate = new Date("2024-10-20T00:46:00"); // <-- change this
+    const startDate = new Date("2020-01-01T00:00:00"); // <-- change this
     function updateCounter() {
       const now = new Date();
       const diff = now - startDate;
